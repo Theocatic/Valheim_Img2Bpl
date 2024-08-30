@@ -141,10 +141,10 @@ sign;Furniture;~x~;~z2~;0;1;0;0;0;<size=~fontsize~>~pix2~;1;1;1";
                             {
                                 for (int i = 0; i < tclist.Count; i++) //loop through each color to set transparent
                                 {
-                                    rgb1 = rgb1 == tclist[i] ? "#00000000" : rgb1; //check the hex of the color to the transparent setting color
-                                    rgb2 = rgb2 == tclist[i] ? "#00000000" : rgb2;
+                                    rgb1 = rgb1.ToLower() == tclist[i].ToLower() ? "#00000000" : rgb1; //check the hex of the color to the transparent setting color
+                                    rgb2 = rgb2.ToLower() == tclist[i].ToLower() ? "#00000000" : rgb2;
                                     if (LastPixel)
-                                        rgb3 = rgb3 == tclist[i] ? "#00000000" : rgb3;
+                                        rgb3 = rgb3 == tclist[i].ToLower() ? "#00000000" : rgb3;
 
                                 }
 
