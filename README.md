@@ -1,4 +1,4 @@
-This is Standalone Application for generating Blueprint files for Images in Valheim
+This is Standalone Application for generating Blueprint files for Images in Valheim.
 Code is in C# bassed off of the code from https://github.com/dsterentyev/img2bpl.pl
 this program is meant to be used for planbuild or infinity hammer
 
