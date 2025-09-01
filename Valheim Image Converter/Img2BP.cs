@@ -69,13 +69,14 @@ namespace Valheim_Image_Converter
                         return Output;
                     }
 
-                    string header = $@"
+                    string header = $"""
 #Name:{bplname}
 #Creator:Img2Bpl.cs
 #Description:""
 #Category:img2bpl
 #Pieces
-{(bblock ? "" : "wood_pole;Building;0;0;0;0;1;0;0;\"\";1;1;1\n")}";
+{(bblock ? "" : "wood_pole;Building;0;0;0;0;1;0;0;\"\";1;1;1\n")}
+""";
 
                     Output = (header);
 
